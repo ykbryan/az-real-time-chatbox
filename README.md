@@ -11,3 +11,5 @@ yarn add concurrently -D -W
 yarn start
 
 yarn workspace chatbox-server add @azure/web-pubsub
+
+swa init
