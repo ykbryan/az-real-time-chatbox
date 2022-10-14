@@ -5,11 +5,11 @@
     "license": "MIT",
     "private": true,
     "workspaces": [
-        "chatbox-server",
+        "chatbox-func",
         "chatbox-client"
     ],
     "scripts": {
-        "start": "concurrently \"yarn workspace chatbox-server start\" \"yarn workspace chatbox-client start\""
+        "start": "concurrently \"yarn workspace chatbox-func start\" \"yarn workspace chatbox-client start\""
     },
     "devDependencies": {
         "concurrently": "^7.4.0"

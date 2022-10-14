@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [words, setWords] = useState("");
   useEffect(() => {
-    fetch('/test')
+    fetch('/chatbox')
       .then((res) => res.json())
       .then((data) => setWords(data.data))
   })
