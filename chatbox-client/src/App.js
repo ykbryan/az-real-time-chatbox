@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [words, setWords] = useState("");
   useEffect(() => {
-    fetch('/chatbox')
+    fetch('/api/chatbox')
       .then((res) => res.json())
       .then((data) => setWords(data.data))
   })
@@ -22,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          { words }
+          {words}
         </a>
       </header>
     </div>
